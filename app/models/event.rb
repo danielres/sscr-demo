@@ -6,4 +6,8 @@ class Event < ActiveRecord::Base
 
   has_many :people, :through => :events_people
 
+  def to_s
+    name
+  end
+
 end
