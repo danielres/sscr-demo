@@ -3,5 +3,8 @@ class EventsPeople < ActiveRecord::Base
 
   validates :event_id, :location, :person_id, :presence => true
 
+  belongs_to :person
+  belongs_to :event
+
 
 end
